@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Page | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">MyPage</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biodata.html">My Biodata</a></li>
+      <li><a href="portfolio.html">My Portfolio</a></li>
+      <li><a href="video.html">My Video</a></li>
+      <li><a href="comments.html">Your Comments</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <header class="page-header">
+    <h1>My Portfolio</h1>
+    <p>Some of the projects and works I've built so far</p>
+  </header>
+
+  <section class="portfolio-grid">
+
+    <div class="portfolio-card reveal">
+      <img src="images/project1.jpg" alt="E-Commerce Website" class="portfolio-img"
+           onerror="this.src='https://placehold.co/600x400/ff6b9d/ffffff?text=Project+1'">
+      <div class="portfolio-body">
+        <h3>🛒 E-Commerce Website</h3>
+        <p>A fully responsive online store with product listing, cart system and checkout flow built as a web development class project.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal">
+      <img src="images/project2.jpg" alt="Augmented Reality App" class="portfolio-img"
+           onerror="this.src='https://placehold.co/600x400/9b5de5/ffffff?text=Project+2'">
+      <div class="portfolio-body">
+        <h3>🥽 AR Character Viewer</h3>
+        <p>An augmented reality web app that displays 3D animated characters on markers using MindAR and Three.js.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">MindAR</span>
+          <span class="tech-tag">Three.js</span>
+          <span class="tech-tag">AR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal">
+      <img src="images/project3.jpg" alt="Student Database System" class="portfolio-img"
+           onerror="this.src='https://placehold.co/600x400/00bbf9/ffffff?text=Project+3'">
+      <div class="portfolio-body">
+        <h3>🗄️ Student Database System</h3>
+        <p>A desktop application to manage student records with a complete relational database design and query interface.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">SQL</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal">
+      <img src="images/project4.jpg" alt="Smart Agriculture IoT" class="portfolio-img"
+           onerror="this.src='https://placehold.co/600x400/00f5d4/000000?text=Project+4'">
+      <div class="portfolio-body">
+        <h3>🌱 Smart Agriculture IoT</h3>
+        <p>An IoT-based monitoring system using ESP32 sensors to track soil moisture, temperature and water plants automatically.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">ESP32</span>
+          <span class="tech-tag">IoT</span>
+          <span class="tech-tag">Sensors</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal">
+      <img src="images/project5.jpg" alt="Data Visualization Dashboard" class="portfolio-img"
+           onerror="this.src='https://placehold.co/600x400/fee440/000000?text=Project+5'">
+      <div class="portfolio-body">
+        <h3>📊 Data Dashboard</h3>
+        <p>An interactive dashboard that analyzes and visualizes large datasets using Hadoop, Hive and R programming.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Hadoop</span>
+          <span class="tech-tag">R</span>
+          <span class="tech-tag">Hive</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal">
+      <img src="images/project6.jpg" alt="Personal Mobile App" class="portfolio-img"
+           onerror="this.src='https://placehold.co/600x400/f15bb5/ffffff?text=Project+6'">
+      <div class="portfolio-body">
+        <h3>📱 To-Do Mobile App</h3>
+        <p>A simple yet elegant task management mobile application with local storage and reminder notifications.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Dart</span>
+          <span class="tech-tag">Mobile</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>Made with <span class="heart">♥</span> by Your Name &copy; <span id="year"></span></p>
+    <p style="font-size:0.85rem; opacity:0.7; margin-top:0.5rem;">IM22503 Multimedia Web Programming Individual Assignment</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

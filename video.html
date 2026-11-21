@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Page | Video</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">MyPage</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biodata.html">My Biodata</a></li>
+      <li><a href="portfolio.html">My Portfolio</a></li>
+      <li><a href="video.html">My Video</a></li>
+      <li><a href="comments.html">Your Comments</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <header class="page-header">
+    <h1>My Video</h1>
+    <p>A short video introduction about me and my work</p>
+  </header>
+
+  <section class="video-container">
+
+    <!-- HTML5 Native Video -->
+    <div class="video-frame reveal">
+      <video controls poster="images/video-poster.jpg">
+        <source src="media/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Video Info -->
+    <div class="video-info reveal">
+      <h3>🎬 About This Video</h3>
+      <p>
+        This is a short introductory video where I share a little about myself, my education journey,
+        my interests in multimedia and web development, and the projects I've worked on. Feel free to
+        watch it to get to know me better!
+      </p>
+      <p style="margin-top:1rem; color:#888; font-size:0.9rem;">
+        💡 <strong>Note:</strong> Replace <code>media/intro.mp4</code> with your own video file, or
+        you can also embed a YouTube video below by replacing the video tag with an
+        <code>&lt;iframe&gt;</code> from YouTube.
+      </p>
+    </div>
+
+    <!-- Optional YouTube Embed Example -->
+    <h2 class="section-title" style="margin:3rem 0 1rem;"><span class="gradient-text">Featured Video</span></h2>
+    <div class="video-frame reveal" style="margin-top:1.5rem;">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Featured Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>Made with <span class="heart">♥</span> by Your Name &copy; <span id="year"></span></p>
+    <p style="font-size:0.85rem; opacity:0.7; margin-top:0.5rem;">IM22503 Multimedia Web Programming Individual Assignment</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

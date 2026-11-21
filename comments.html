@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Page | Comments</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">MyPage</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biodata.html">My Biodata</a></li>
+      <li><a href="portfolio.html">My Portfolio</a></li>
+      <li><a href="video.html">My Video</a></li>
+      <li><a href="comments.html">Your Comments</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Your Comments</h1>
+    <p>Have any feedback or questions? I'd love to hear from you!</p>
+  </header>
+
+  <section class="form-container">
+    <div class="form-card reveal">
+      <form id="commentForm" novalidate>
+
+        <div class="form-group">
+          <label for="name">👤 Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name">
+          <div class="error-msg" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">📧 Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com">
+          <div class="error-msg" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">📌 Subject</label>
+          <select id="subject">
+            <option value="">-- Please select a subject --</option>
+            <option value="feedback">General Feedback</option>
+            <option value="project">Project Inquiry</option>
+            <option value="collab">Collaboration</option>
+            <option value="other">Other</option>
+          </select>
+          <div class="error-msg" id="subjectError"></div>
+        </div>
+
+        <div class="form-group">
+          <label>⭐ Rate My Website</label>
+          <div class="rating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <div class="error-msg" id="ratingError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">💬 Your Message</label>
+          <textarea id="message" placeholder="Write your comments here..."></textarea>
+          <div class="error-msg" id="messageError"></div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message 🚀</button>
+
+        <div class="success-msg" id="successMsg">
+          ✅ Thank you! Your message has been sent successfully.
+        </div>
+      </form>
+    </div>
+
+    <!-- Social Links -->
+    <div class="form-card reveal" style="margin-top:2rem; text-align:center;">
+      <h3 style="font-family:var(--font-display); margin-bottom:0.5rem;">Connect With Me</h3>
+      <p style="color:#666; margin-bottom:0.5rem;">Feel free to reach out on social media!</p>
+      <div class="social-links">
+        <a href="#" title="Facebook">📘</a>
+        <a href="#" title="Instagram">📸</a>
+        <a href="#" title="Twitter / X">🐦</a>
+        <a href="#" title="LinkedIn">💼</a>
+        <a href="#" title="GitHub">🐙</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with <span class="heart">♥</span> by Your Name &copy; <span id="year"></span></p>
+    <p style="font-size:0.85rem; opacity:0.7; margin-top:0.5rem;">IM22503 Multimedia Web Programming Individual Assignment</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

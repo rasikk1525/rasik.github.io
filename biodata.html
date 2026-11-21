@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Page | Biodata</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">MyPage</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biodata.html">My Biodata</a></li>
+      <li><a href="portfolio.html">My Portfolio</a></li>
+      <li><a href="video.html">My Video</a></li>
+      <li><a href="comments.html">Your Comments</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <header class="page-header">
+    <h1>My Biodata</h1>
+    <p>Get to know a little more about me</p>
+  </header>
+
+  <section class="biodata-container">
+
+    <!-- Profile Photo + Intro -->
+    <div class="biodata-profile reveal">
+      <img src="images/profile.jpg" alt="My Profile Picture" class="profile-img"
+           onerror="this.src='https://placehold.co/160x160/ff6b9d/ffffff?text=My+Photo'">
+      <div style="flex:1; min-width:250px; text-align:left;">
+        <h2 style="font-family:var(--font-display); font-size:1.6rem; margin-bottom:0.5rem;">Your Name</h2>
+        <p style="color:#666;">Multimedia Computing Student | Universiti Malaysia Sabah</p>
+        <p style="color:#888; font-size:0.9rem; margin-top:0.5rem;">
+          "Design is not just what it looks like and feels like. Design is how it works."
+        </p>
+      </div>
+    </div>
+
+    <!-- Personal Details Table -->
+    <h2 class="section-title" style="margin:2rem 0 1rem;"><span class="gradient-text">Personal Details</span></h2>
+    <table class="biodata-table reveal">
+      <tr><th>Name</th><td>BAGURDEEN RASIK BIN ABU BAKAR</td></tr>
+      <tr><th>Age</th><td>21 Years Old</td></tr>
+      <tr><th>Date of Birth</th><td>13 JULY 2000</td></tr>
+      <tr><th>Nationality</th><td>Malaysian</td></tr>
+      
+      <tr><th>Address</th><td>Sandakan, Sabah, Malaysia</td></tr>
+      <tr><th>Email</th><td>bagurdeen_rasik_bi24@iluv.ums.edu.my</td></tr>
+      <tr><th>Phone</th><td>+60102092009</td></tr>
+    </table>
+
+    <!-- Education -->
+    <h2 class="section-title" style="margin:2rem 0 1rem;"><span class="gradient-text">Education Background</span></h2>
+    <table class="biodata-table reveal">
+      <tr><th>2024 – Present</th><td>Bachelor of Multimedia Technology, Universiti Malaysia Sabah</td></tr>
+      <tr><th>2019 – 2023</th><td>Malaysian Certificate of Education (SMC) — Secondary School</td></tr>
+      <tr><th>2013 – 2018</th><td>Primary School</td></tr>
+    </table>
+
+    <!-- Timetable -->
+    <h2 class="section-title" style="margin:2rem 0 1rem;"><span class="gradient-text">My Class Timetable</span></h2>
+    <p class="section-subtitle">Semester 5, Session 2026/2027</p>
+    <div class="timetable-wrap reveal">
+      <table class="timetable">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>8:00 – 10:00</th>
+            <td class="slot-1">IM22503<br>Multimedia Web Programming</td>
+            <td class="break">Break</td>
+          </tr>
+          <tr>
+            <th>10:00 – 12:00</th>
+            <td class="slot-2">IM22304<br>Database Systems</td>
+            <td class="break">Break</td>
+            <td class="slot-4">IM22101<br>Operating Systems</td>
+            <td class="slot-1">IM22503<br>Multimedia Web</td>
+            <td class="slot-3">IM22402<br>Human-Computer Interaction</td>
+          </tr>
+          <tr>
+            <th>2:00 – 4:00</th>
+            <td class="break">Break</td>
+            <td class="slot-3">IM22402<br>Lab Session</td>
+            <td class="slot-1">IM22503<br>Lab Session</td>
+            <td class="break">Break</td>
+            <td class="slot-2">IM22304<br>Tutorial</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <p>Made with <span class="heart">♥</span> by RASIK &copy; <span id="year"></span></p>
+    <p style="font-size:0.85rem; opacity:0.7; margin-top:0.5rem;">IM22503 Multimedia Web Programming Individual Assignment</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
