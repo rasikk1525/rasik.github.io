@@ -3,44 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Page | Biodata</title>
+  <title>My Personal Page | Home</title>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    :root {
-      --font-display: 'Segoe UI', sans-serif;
-    }
-    .reveal {
-      opacity: 1;
-    }
-    .biodata-profile {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 30px;
-    }
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #ff6b9d;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 30px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-    }
-    th {
-      background-color: #ff6b9d;
-      color: white;
-    }
-  </style>
 </head>
 <body>
 <canvas id="bg-canvas"></canvas>
@@ -53,80 +17,102 @@
     <a href="index.html" class="logo">MyPage</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="biodata.html">Biodata</a></li>
-      <li><a href="timetable.html">Timetable</a></li>
+      <li><a href="biodata.html">My Biodata</a></li>
+      <li><a href="portfolio.html">My Portfolio</a></li>
+      <li><a href="video.html">My Video</a></li>
+      <li><a href="comments.html">Your Comments</a></li>
     </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
   </nav>
 
-  <!-- Profile Photo + Intro -->
-  <div class="biodata-profile reveal">
-    <img src="IMG_0302.jpg" alt="My Profile Picture" class="profile-img"
-         onerror="this.src='https://placehold.co/160x160/ff6b9d/ffffff?text=My+Photo'">
-    <div style="flex:1; min-width:250px; text-align:left;">
-      <h2 style="font-family:var(--font-display); font-size:1.6rem; margin-bottom:0.5rem;">Bagurdeen Rasik Bin Abu Bakar</h2>
-      <p style="color:#666;">Multimedia Technology Student | Universiti Malaysia Sabah</p>
-      <p style="color:#888; font-size:0.9rem;">BI24110190</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, Welcome to my corner of the web!</p>
+      <h1 class="hero-title">I'm <span class="gradient-text">Bagurdeen Rasik</span></h1>
+      <p class="hero-tagline">A Multimedia Technology student who loves building creative, interactive web experiences.</p>
+      <div class="hero-buttons">
+        <a href="portfolio.html" class="btn btn-primary">View My Work ✨</a>
+        <a href="comments.html" class="btn btn-outline">Get in Touch 💬</a>
+      </div>
     </div>
-  </div>
+  </header>
 
-  <!-- Timetable Section -->
-  <section style="padding: 20px 30px;">
-    <h2>Semester 5 Timetable 2026/2027</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>08:00 - 09:30</td>
-          <td></td>
-          <td>IM22503 Multimedia Web Programming</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>09:30 - 11:00</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>11:00 - 12:30</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>14:00 - 15:30</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>15:30 - 17:00</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
+  <!-- About Me -->
+  <section class="section">
+    <h2 class="section-title"><span class="gradient-text">About Me</span></h2>
+    <p class="section-subtitle">A short introduction about who I am</p>
+    <div class="about-box reveal">
+      <p>
+        Hi there! I'm Rasik, a passionate student pursuing a degree in Multimedia Technology at
+        Universiti Malaysia Sabah. I enjoy blending creativity with technology — designing beautiful
+        interfaces, writing clean code, and bringing ideas to life on the web. When I'm not coding,
+        you'll find me exploring new design trends, creating 3D work in Blender, or watching tech
+        tutorials. Thanks for stopping by! 🚀
+      </p>
+    </div>
   </section>
 
+  <!-- Skills & Interests -->
+  <section class="section">
+    <h2 class="section-title"><span class="gradient-text">Skills & Interests</span></h2>
+    <p class="section-subtitle">Things I'm good at and things I love doing</p>
+    <div class="card-grid">
+      <div class="card reveal">
+        <span class="card-icon">🎨</span>
+        <h3>Web Design</h3>
+        <p>Creating responsive, visually appealing web layouts using HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🥽</span>
+        <h3>AR Development</h3>
+        <p>Building augmented reality experiences with MindAR and Three.js on the web.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🧊</span>
+        <h3>3D Modeling</h3>
+        <p>Designing low-poly product models, materials and lighting scenes in Blender.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🎬</span>
+        <h3>Video Production</h3>
+        <p>Planning, shooting, editing and adding motion graphics to short video clips.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">🎮</span>
+        <h3>Gaming</h3>
+        <p>An avid gamer who enjoys story-driven and competitive games in my free time.</p>
+      </div>
+      <div class="card reveal">
+        <span class="card-icon">💡</span>
+        <h3>Learning Tech</h3>
+        <p>Always curious about new tools, frameworks and emerging web technologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="section">
+    <div class="about-box reveal">
+      <h2 class="section-title" style="margin-bottom:1rem;">Explore More</h2>
+      <p style="margin-bottom:1.5rem;">Want to know more about me? Dive into the other pages!</p>
+      <div class="hero-buttons">
+        <a href="biodata.html" class="btn btn-primary">My Biodata 👤</a>
+        <a href="video.html" class="btn btn-outline">Watch My Video 🎬</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with <span class="heart">♥</span> by Rasik &copy; <span id="year"></span></p>
+    <p style="font-size:0.85rem; opacity:0.7; margin-top:0.5rem;">IM22503 Multimedia Web Programming Individual Assignment</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/rasik_786" target="_blank" rel="noopener" title="Instagram">📷</a>
+      <a href="https://www.tiktok.com/@bagurdeenrasik" target="_blank" rel="noopener" title="TikTok">🎵</a>
+      <a href="https://github.com/rasikk1525" target="_blank" rel="noopener" title="GitHub">🐙</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
